@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="project.css" rel="stylesheet" id="theme-link">
+    <link href="media.css" rel="stylesheet" id="theme-link_media">
+    <title>SakaAgency</title>
+</head>
+<body>
+    <body>
+    <div class="wrapper light-theme">
+        <div class="container">
+
+            <article id="home"></article>
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__container">
+                        <div class="header__tittle">
+                            SakaAgency
+                        </div>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                                <li class="menu__item"><a href="#service" class="menu__link">Service</a></li>
+                                <li class="menu__item"><a href="#project" class="menu__link">Project</a></li>
+                                <li class="menu__item"><a href="#testimonials" class="menu__link">Testimonials</a></li>
+                            </ul>
+                        </nav>
+                        <button class="theme-button button" type="button">Change Theme</button>
+                        <button class="theme-button_dark button" type="button">Change Theme</button>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <main class="main">
+                <section class="digital-agency">
+                    <div class="digital-agency__container">
+                        <div class="digital-agency__content">
+                            <div class="digital-agency__block-text">
+                                <h1 class="block-text__tittle ">
+                                    Digital Agency, 
+                                    <p>We Create Experiences.</p>
+                                </h1>
+                                <h2 class="block-text__subtittle">
+                                    Let’s Create an Amazing Website To Help Your Showcase And Make Up <p>Your Business!</p>
+                                </h2>
+
+                                <button class="open-button button" onclick="openForm()">Contact Us</button>
+                            </div>
+
+                            <div class="form-popup" id="myForm">
+                                <form action="../action_page.php" class="form-container">
+                                    <h1 class="form__tittle">Leave your contacts</h1>
+                                  
+                                    <label for="number"><b>Number</b></label>
+                                    <input type="text" placeholder="Your number" name="number" required>
+                                  
+                                    <label for="psw"><b>Name</b></label>
+                                    <input type="password" placeholder="Your name" name="psw" required>
+
+                                    <div class="button__container">
+                                        <button type="submit" class="btn">Call Me</button>
+                                        <button type="button" class="btn cancel" onclick="closeForm()">Closed</button>
+                                    </div>
+        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <article id="about"></article>
+
+                <section class="about">
+                    <div class="about__container">
+
+                        <div class="about__tittle">
+                            About <p>SakaAgency</p>
+                        </div>
+
+                        <div class="about__content">
+                            <div class="about__block-text">
+                                
+                                <div class="block-text__item">
+                                    <div class="item__img">
+                                        <img src="../web_3/img/10+.svg" alt="">
+                                    </div>
+                                    <div class="item__container">
+                                        <div class="item__tittle">
+                                            Since 2010
+                                        </div>
+                                        <div class="item__text">
+                                            Have a long road journey about digital agency, we have the best experience to help grow your business
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-text__item">
+                                    <div class="item__img">
+                                        <img src="../web_3/img/satisf.svg" alt="">
+                                    </div>
+                                    <div class="item__container">
+                                        <div class="item__tittle">
+                                            Satisfying Guaranteed
+                                        </div>
+                                        <div class="item__text">
+                                            Money-back guaranteed if you are not like our work, you can complaint
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-text__item">
+                                    <div class="item__img">
+                                        <img src="../web_3/img/world.svg" alt="">
+                                    </div>
+                                    <div class="item__container">
+                                        <div class="item__tittle">
+                                            Around The World
+                                        </div>
+                                        <div class="item__text">
+                                            We have the best team from around the world, so our customer is around the world
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-text__item">
+                                    <div class="item__img">
+                                        <img src="../web_3/img/secure.svg" alt="">
+                                    </div>
+                                    <div class="item__container">
+                                        <div class="item__tittle">
+                                            Secure Payment
+                                        </div>
+                                        <div class="item__text">
+                                            Don’t worry about payment, our payment is 100% secure
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <article id="service"></article>
+
+                <section class="our">
+                    <div class="our__container">
+                        <div class="our__tittle tittle">Our Specialization can 
+                            <p>help your problem</p>
+                        </div>
+
+                        <div class="our__block-text">
+                            <div class="our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_1.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    Branding
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+
+                            <div class="our__block-item-2 our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_2.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    Mobile Apps
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+
+                            <div class="our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_3.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    E-commerce
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+
+                            <div class="our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_4.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    Human Resources
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+
+                            <div class="our__block-item-5 our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_5.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    Learning Management
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+
+                            <div class="our__block-item">
+                                <div class="item-our__img">
+                                    <img src="../web_3/img/our_6.svg" alt="" class="src">
+                                </div>
+                                <div class="item-our__tittle">
+                                    UI/UX Design
+                                </div>
+                                <div class="item-our__text">
+                                    Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                </div>
+                                <div class="item__buttton">
+                                    <a href="" class="button__arrow">Read More</a>
+                                    <button class="btn"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <article id="project"></article>
+
+                <section class="thebest">
+                        <div class="thebest__tittle tittle">
+                            The Best <p>Amazing Project</p>
+                        </div>
+
+                        <div class="thebest__btn-arrow">
+                            <div class="item__buttton">
+                                <a href="" class="button__arrow-thebest button__arrow ">View All</a>
+                                <button class="btn button-arrow"><img src="../web_3/img/arrow.svg" alt="Кнопка «button»"></button>
+                            </div>
+                        </div>
+        </div>
+
+                        <div class="thebest-img__container">
+                            <div class="best__container container">
+                                <div class="thebest-img__item thebest-img__item-left">
+                                    <img src="../web_3/img/pic1.svg" alt="">
+                                </div>
+
+                                <div class="thebest-img__item thebest-img__item-right">
+                                    <img src="../web_3/img/pic2.svg" alt="">
+                                </div>
+
+                                <div class="thebest-img__item thebest-img__item-left">
+                                    <img src="../web_3/img/pic3.svg" alt="">
+                                </div>
+
+                                <div class="thebest-img__item thebest-img__item-right">
+                                    <img src="../web_3/img/pic4.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+
+                <article id="testimonials"></article>
+        
+        <div class="container">
+                <section class="meet">
+                    <div class="meet__tittle tittle">
+                        Meet The Founder
+                    </div>
+
+                    <div class="meet__container">
+                        <div class="meet__block">
+                            <div class="meet__item">
+                                <div class="block__container-left">
+                                    <div class="block__tittle">
+                                        Jhon Doe
+                                    </div>
+                                    <div class="block__text">
+                                        A visioner, and tech-product <p>design guy</p>
+                                    </div>
+                                </div>
+                                <div class="block__img">
+                                    <img src="../web_3/img/JhonDoe.svg" alt="" class="src">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="meet__block">
+                            <div class="meet__item-right meet__item">
+                                <div class="block__img">
+                                    <img src="../web_3/img/DoeJhon.svg" alt="" class="src">
+                                </div>
+                                <div class="block__container-right">
+                                    <div class="block__tittle-right">
+                                        Doe Jhon
+                                    </div>
+                                    <div class="block__text-right">
+                                        A tech guy, expert in MERN Stack and Server Side
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="meet__block">
+                            <div class="meet__item">
+                                <div class="block__container-left">
+                                    <div class="block__tittle">
+                                        Jhon Key
+                                    </div>
+                                    <div class="block__text">
+                                        Lead UI/UX Designer, loves design and build website
+                                    </div>
+                                </div>
+                                <div class="block__img">
+                                    <img src="../web_3/img/JhonKey.svg" alt="" class="src">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="meet__block">
+                            <div class="meet__item-right meet__item">
+                                <div class="block__img">
+                                    <img src="../web_3/img/Kekey.svg" alt="" class="src">
+                                </div>
+                                <div class="block__container-right">
+                                    <div class="block__tittle-right">
+                                       Kekey
+                                    </div>
+                                    <div class="block__text-right">
+                                        Lead Researcher, loves data and human-centered design
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+
+                </section>
+
+                <section class="review">
+                    <div class="review__row">
+                        <div class="review__item">
+                            <div class="review__item_left">
+                                <div class="item_left__tittle tittle">
+                                    Our Customer <p>Say</p>
+                                </div>
+                                <div class="item_left__text">
+                                    Feedback from our happy customers helps us in<p> reaching the top</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review__item_right">
+
+                                <div class="item_right__img-1">
+                                    <img src="../web_3/img/Quote Mark.png" alt="">
+                                </div>
+
+                                <div class="item_right__row">
+                                    <div class="item_right__img-2">
+                                        <img src="../web_3/img/MrJackson.svg" alt="">
+                                    </div>
+                                    <div class="item_right__tittle">
+                                        Mr. Jackson
+                                    </div>
+                                    <div class="item_right__subtittle">
+                                        CEO of ABD Group
+                                    </div>
+                                    <div class="item_right__text">
+                                        Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat. Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat. Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat. Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                                    </div>
+                                </div>
+                                
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+                <section class="grow">
+                    <div class="container">
+                        <div class="grow__row">
+                            <div class="grow__tittle tittle">
+                                Grow Your Business With <p>SakaAgency</p>
+                            </div>
+                            
+                            <button class="open-button button" onclick="openForm()">Contact Us</button>
+
+                            <div class="form-popup" id="myForm">
+                                <form action="../action_page.php" class="form-container">
+                                    <h1 class="form__tittle">Leave your contacts</h1>
+                                  
+                                    <label for="number"><b>Number</b></label>
+                                    <input type="text" placeholder="Your number" name="number" required>
+                                  
+                                    <label for="psw"><b>Name</b></label>
+                                    <input type="password" placeholder="Your name" name="psw" required>
+                                    
+                                    <div class="button__container">
+                                        <button type="submit" class="btn">Call Me</button>
+                                        <button type="button" class="btn cancel" onclick="closeForm()">Closed</button>
+                                    </div>
+        
+                                </form>
+                            </div>
+
+                            <div class="grow-item__row">
+                                <div class="grow-item">
+                                    <div class="grow-item__item">
+                                        <div class="grow-item__tittle">
+                                            100+
+                                        </div>
+                                        <div class="grow-item__text">
+                                            Happy Customer
+                                        </div> 
+                                    </div>
+
+                                    <div class="grow-item__item">
+                                        <div class="grow-item__tittle">
+                                            100+
+                                        </div>
+                                        <div class="grow-item__text">
+                                            Project Completed
+                                        </div>
+                                    </div>
+
+                                    <div class="grow-item__item">
+                                        <div class="grow-item__tittle">
+                                            40+
+                                        </div>
+                                        <div class="grow-item__text">
+                                            Awards Won
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <article id="contact us"></article>
+
+            <footer class="footer">
+                <hr color=" #1E2028">
+
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__info">
+                            <div class="footer__tittle">
+                                SakaAgency
+                            </div>
+                            <div class="footer__text">
+                                Copyright © 2021 SakaAgency <p>All Right Reserver</p>
+                            </div>
+                            <div class="footer__img">
+                                <div class="footer__img-item">
+                                    <img src="../web_3/img/inst.svg" alt="">
+                                </div>
+                                <div class="footer__img-item">
+                                    <img src="../web_3/img/DFribblr.svg" alt="">
+                                </div>
+                                <div class="footer__img-item">
+                                    <img src="../web_3/img/YT.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-links">
+                            <div class="footer-tittle">
+                                Company
+                            </div>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">About Us</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Project</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Pricing</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Career</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Testimonial</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div class="footer-links">
+                            <div class="footer-tittle">
+                                Support
+                            </div>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">FAQ</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">Term and Conditions</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">halo@sakaagency.studio</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links__links">
+                                    <li class="links__item-links">
+                                        <a href="" class="links__item">022-123-4567</a>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div class="footer-button">
+                            <div class="footer-tittle">
+                                Get In Touch
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+            </footer>
+
+
+
+
+
+
+    </div>
+   
+
+
+    <script src="../web_3/script.js"></script>
+</body>
+</html>
